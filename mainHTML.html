@@ -1,0 +1,77 @@
+<html>
+ <head>
+   <meta charset="utf-8"/>
+   <title>Simon game</title>
+   <link rel="shortcut icon" href="https://lh4.ggpht.com/qfy_9xdh28qHatRbeKmLI3Hne-cWktrT-zWojDGiByFWMrfF5oAx8qeNuj25EzwUdB4=w300" />
+   <!-- jQuery library -->
+   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+   <!-- Latest compiled JavaScript -->
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'  type='text/css'>
+   <script src="../JavaScript/JavaScript.js">
+   </script><link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../CSS3/mainCSS.css">
+ </head> 
+<body>
+   <div class="container-fluid">
+       <div class="row simonGamePaddingTop">
+           <div class="col-sm-3"></div>
+           <div class='col-sm-6'>
+               <div class="row">
+                   <div class="col-sm-6 padding1">
+                       <div id="green" onclick="sendGreen()" onmousedown="green()" onmouseup="clearGreen()"></div>
+                       <div id="yellow" onclick="sendYellow()" onmousedown="yellow()" onmouseup="clearYellow()" ></div>
+                   </div>
+                   <div class="col-sm-6 padding2">
+                       <div id="red" onclick="sendRed()" onmousedown="red()" onmouseup="clearRed()"></div>
+                       <div id="blue" onclick="sendBlue()" onmousedown="blue()" onmouseup="clearBlue()"></div>
+                   </div>
+               </div>
+           </div>
+           <div class="col-sm-3"></div>
+           </div>
+
+           <div class="row ">
+                 <div class="col-sm-2"></div>
+                 <div class="col-sm-8">
+                     <div class="row text-center">
+                         <div class="col-sm-4"></div>
+                         <div class="col-sm-4 menu">
+                             <h2 id="simonTitle">Simon &#174;</h2>
+                             <div class="row paddingInside">
+                                 <div class="col-sm-3 display">
+                                     <p id="displayText" >--</p>
+                                 </div>
+                                 <div class="col-sm-3 padding3 ">
+                                    <button type="button" class="start" onclick="startGame1()">
+                                    </button>
+                                     <h5 id="startText" >Start</h5>
+                                 </div>
+                                 <div class="col-sm-3 padding4">
+                                     <button type="button" class="strict" onclick="strict()">
+                                     </button>
+                                     <h5>Strict</h5>
+                                 </div>
+                             </div>
+                             <div class" row onOff">
+                                 <div class="col-sm-3 text-right">Off</div>
+                                 <div class="col-sm-6 switch1 text-center">
+                                 <label class="switch">
+                                 <input type="checkbox" onclick="turnOn()" >
+                                 <div class="slider round"></div>
+                                 </label>
+                                 </div>
+                                 <div id="Off" class"col-sm-3 text-left">On</div>
+                             </div>
+                         </div>
+                         <div class="col-sm-4"></div>
+                    </div>
+                    </div>
+                 <div class="col-sm-2"></div>
+           </div>
+       </div>
+
+</body>
+</html>
